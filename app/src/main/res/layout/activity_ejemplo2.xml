@@ -20,29 +20,28 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/editName"
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtName"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
-        android:ems="10"
-        android:inputType="number"
         android:layout_marginTop="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
         android:text="Nombre"
-        app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textTitulo" />
 
-    <TextView
-        android:id="@+id/textView3"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnStart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pulsame"
         android:layout_marginTop="50dp"
+        android:text="Pulsame"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/editName"
-        app:layout_constraintStart_toStartOf="@+id/editName"
-        app:layout_constraintTop_toBottomOf="@id/editName" />
+        app:layout_constraintEnd_toEndOf="@+id/edtName"
+        app:layout_constraintStart_toStartOf="@+id/edtName"
+        app:layout_constraintTop_toBottomOf="@id/edtName" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

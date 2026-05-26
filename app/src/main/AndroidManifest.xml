@@ -12,6 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Idgs905BaseAndroid">
         <activity
+            android:name=".multiplica_AxB.activity_multiplica"
+            android:exported="false" />
+        <activity
+            android:name=".multiplica_AxB.MultiplicaAtivity"
+            android:exported="false" />
+        <activity
+            android:name=".Multiplica_AxB"
+            android:exported="false" />
+        <activity
+            android:name=".activitu_result"
+            android:exported="false" />
+        <activity
             android:name=".Ejemplo2.Ejemplo2"
             android:exported="false" />
         <activity

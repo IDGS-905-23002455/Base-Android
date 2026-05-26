@@ -10,6 +10,7 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.idgs905baseandroid.Ejemplo1.ejemplo1
 import com.example.idgs905baseandroid.Ejemplo2.Ejemplo2
 import com.example.idgs905baseandroid.Distancia.distancia
+import com.example.idgs905baseandroid.multiplica_AxB.MultiplicaAtivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,10 +18,10 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-        // Asignación corregida respetando tus IDs del XML:
-        val btnEjemplo1 = findViewById<Button>(R.id.btn1) // btn1 -> Ejemplo1
-        val btnDistancia = findViewById<Button>(R.id.btn2) // btn2 -> Distancia
-        val btnEjemplo2 = findViewById<Button>(R.id.btn3) // btn3 -> Ejemplo2
+        val btnEjemplo1 = findViewById<Button>(R.id.btn1)
+        val btnDistancia = findViewById<Button>(R.id.btn2)
+        val btnEjemplo2 = findViewById<Button>(R.id.btn3)
+        val btnMultiplica = findViewById<Button>(R.id.btn4)
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -28,10 +29,10 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        // Listeners corregidos con los nombres exactos de las variables
         btnEjemplo1.setOnClickListener { navigateToEjemplo1() }
         btnDistancia.setOnClickListener { navigateToDistancia() }
         btnEjemplo2.setOnClickListener { navigateToEjemplo2() }
+        btnMultiplica.setOnClickListener { navigateToMultiplica() }
     }
 
     private fun navigateToEjemplo1() {
@@ -46,6 +47,11 @@ class MainActivity : AppCompatActivity() {
 
     private fun navigateToEjemplo2() {
         val intent = Intent(this, Ejemplo2::class.java)
+        startActivity(intent)
+    }
+
+    private fun navigateToMultiplica() {
+        val intent = Intent(this, MultiplicaAtivity::class.java)
         startActivity(intent)
     }
 }
