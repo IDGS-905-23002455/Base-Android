@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Idgs905BaseAndroid">
         <activity
+            android:name=".Examen_Parcial1.Examen"
+            android:exported="false" />
+        <activity
             android:name=".multiplica_AxB.activity_multiplica"
             android:exported="false" />
         <activity
